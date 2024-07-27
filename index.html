@@ -1,0 +1,198 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dyna Joshy | Data Analyst and an AI enthusiast</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="icon" href="./assets/square_logo.png" type="image/x-icon">
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("W8KK0-Rh9tWIw9Fik");
+        })();
+        </script>
+    </head>    
+    <body style="background-color:rgb(177, 206, 211);">
+    <header>
+        <nav id="nav"> 
+            <div class="header">
+                <div class="logo">
+                    <button class="btn_colors" onclick="redirectToContact()">Download my resume</button>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a> 
+                    <li><a href="#Skills">Skills</a> 
+                    <li><a href="#projects">Projects</a> 
+                    <li><a href="#Timeline">Experience</a> 
+                    <li><a href="#contact">Contact</a> 
+                    <!--  -->
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="header">
+                <div class="logo">
+                    <img src="./assets/lza_logo.png" alt="  Dyna Joshy">
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a> 
+                        <li><a href="#Skills" onclick="toggleMenu()">Skills</a> 
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a> 
+                        <li><a href="#Timeline" onclick="toggleMenu()">Experience</a> 
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a> 
+                        <!-- <li><a href="path_to_your_resume.pdf" download onclick="toggleMenu()">Download Resume</a>  -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <div class="section_pic_container">
+                <img src="./assets/Dyna Joshy _Poster.JPG" alt="Dyna Joshy Profile Picture" />
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title_1">Dyna Joshy</h1>
+                
+                <p class="section_text_p2">Data Analyst and an AI enthusiast</p> 
+                <div class="btn_container">
+                    <button class="btn_color" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section_text_p1">Get To Know More</p>
+            <h1 class="title_2">About   Dyna Joshy</h1>
+            <div class="text_container">
+              Passionate about the possibilities within Big Data and Data Engineering, I thrive on converting complex data sets into practical insights. My diverse tech journey includes leading the Google Developer Student Club, where I fostered a collaborative spirit and encouraged peers to explore advanced technologies. With a blend of technical proficiency and leadership skills, I am committed to leveraging data-driven strategies to address real-world issues and drive innovation. Let's connect and explore how we can collaborate on pioneering projects.</p>
+            </div>
+        </section>
+        <section id="Skills">
+          <ul class="skills-list">
+             
+             
+            <center><h2 class="title_2">Walkthrough my Skills</h2></center>
+             
+            <h4 class="level-0 rectangle">
+              <img src="assets/py.png" style="margin-right: 20px;">
+              <img src="assets/java.png" style="margin-right: 20px;">
+              <img src="assets/R.jpeg">
+            </h4>
+            <h4 class="level-0 rectangle">
+              <img src="assets/cloud.png" style="margin-right: 20px;">
+              <img src="assets/git.png" style="margin-right: 20px;">
+              <img src="assets/hadoop.png">
+            </h4>
+
+            
+            
+             
+             
+             
+              <h4 class="level-0rectangle"><img src="assets/pyt.png" style="margin-right: 20px;"><img src="assets/pandas.png" style="margin-right: 20px;"><img src="assets/tableau.png"><img src="assets/mysql.png"></h4>
+      
+             
+             
+              
+      
+             
+        
+             
+          </ul>
+          
+        </section>
+       <section id="Timeline">
+        <center><h2 class="title_2">Experience</h2></center>
+        <ul>
+            <br>
+            <li style="--accent-color:#41516C">
+                <div class="date">2022</div>
+                <div class="title">Mentor</div>
+                <div class="descr">Mangalam College Of Engineering</div>
+             
+            <li style="--accent-color:#FBCA3E">
+                <div class="date">2022</div>
+                <div class="title">Digital Strategist</div>
+                <div class="descr">Emitime Private Limited</div>
+             
+            <li style="--accent-color:#E24A68">
+                <div class="date">2023</div>
+                <div class="title">Technical Coordinator</div>
+                <div class="descr">HandOut Foundation.</div>
+             
+            <li style="--accent-color:#1B5F8C">
+                <div class="date">2023</div>
+                <div class="title">Coding Instructor</div>
+                <div class="descr">Smavy Academy</div>
+             
+            <li style="--accent-color:#4CADAD">
+                <div class="date">2024</div>
+                <div class="title">AI and Analytics Intern</div>
+                <div class="descr">Divine Infra</div>
+             
+        </ul>
+       </section>
+        <section id="contact">
+            <h1 class="title_2">Contact Me</h1>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button class="submit-button" onclick="sendMail()">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <p>Dyna Joshy</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>East Delhi,India</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:joshydyna@gmail.com">joshydyna@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://www.linkedin.com/in/dyna-joshy" target="_blank">
+                            <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &#169; 2024 Dyna Joshy. All Rights Reserved.</p>
+        </footer>
+    </main>
+   <script src="script.js"></script>
+</body>
+</html> 
+
