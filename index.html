@@ -6,7 +6,7 @@
         <title>Dyna Joshy | Data Analyst and an AI enthusiast</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="stylesheet" href="nediaquesries.css">
         <link rel="icon" href="./assets/square_logo.png" type="image/x-icon">
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -36,9 +36,10 @@
         </nav>
         <nav id="hamburger-nav">
             <div class="header">
-                <div class="logo">
+                <!-- <div class="logo">
                     <img src="./assets/lza_logo.png" alt="  Dyna Joshy">
-                </div>
+                </div> -->
+                <button class="btn_colors" onclick="redirectToContact()">Download my resume</button>
                 <div class="hamburger-menu">
                     <div class="hamburger-icon" onclick="toggleMenu()">
                         <span></span>
@@ -63,10 +64,14 @@
                 <img src="./assets/Dyna Joshy _Poster.JPG" alt="Dyna Joshy Profile Picture" />
             </div>
             <div class="section_text">
-                <p class="section_text_p1">Hello, I'm</p>
-                <h1 class="title_1">Dyna Joshy</h1>
-                
-                <p class="section_text_p2">Data Analyst and an AI enthusiast</p> 
+                <div class="container">
+                    <p class="section_text_p1">Hello, I'm</p>
+                    <h1 class="title_1">Dyna Joshy</h1>
+                    <p class="color-change">Let's play with Data and AI</p>
+
+                </div>
+
+              
                 <div class="btn_container">
                     <button class="btn_color" onclick="location.href='./#contact'">
                         Contact Info
@@ -82,39 +87,243 @@
             </div>
         </section>
         <section id="Skills">
-          <ul class="skills-list">
-             
-             
-            <center><h2 class="title_2">Walkthrough my Skills</h2></center>
-             
-            <h4 class="level-0 rectangle">
-              <img src="assets/py.png" style="margin-right: 20px;">
-              <img src="assets/java.png" style="margin-right: 20px;">
-              <img src="assets/R.jpeg">
-            </h4>
-            <h4 class="level-0 rectangle">
-              <img src="assets/cloud.png" style="margin-right: 20px;">
-              <img src="assets/git.png" style="margin-right: 20px;">
-              <img src="assets/hadoop.png">
-            </h4>
-
-            
-            
-             
-             
-             
-              <h4 class="level-0rectangle"><img src="assets/pyt.png" style="margin-right: 20px;"><img src="assets/pandas.png" style="margin-right: 20px;"><img src="assets/tableau.png"><img src="assets/mysql.png"></h4>
-      
-             
-             
-              
-      
-             
-        
-             
-          </ul>
           
+             
+             
+            <center><h1 class="title_2">Walkthrough my Skills
+                
+            </h1></center>
+             
+            <div class="Skills">
+              <div class="box">
+                <div class="shadow"></div>
+                <div class="content">
+                  <div class="percent" data-text="Python" style="--num: 90">
+                    <div class="dot"></div>
+                    <svg>
+                      <circle cx="70" cy="70" r="70"></circle>
+                      <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                  </div>
+                  
+                  <div class="number">
+                    <h2>90<span>%</span></h2>
+                  </div>
+                </div>
+              </div>
+
+                <div class="box">
+                  <div class="shadow"></div>
+                  <div class="content">
+                    <div class="percent" data-text="R" style="--num: 95">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                    </div>
+                    <div class="number">
+                      <h2>95<span>%</span></h2>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="box">
+                  <div class="shadow"></div>
+                  <div class="content">
+                    <div class="percent" data-text="PowerBI" style="--num: 87">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                    </div>
+                    
+                    <div class="number">
+                      <h2>87<span>%</span></h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                    <div class="shadow"></div>
+                    <div class="content">
+                      <div class="percent" data-text="React" style="--num: 80">
+                        <div class="dot"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      
+                      <div class="number">
+                        <h2>80<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="shadow"></div>
+                    <div class="content">
+                      <div class="percent" data-text="Hadoop" style="--num: 85">
+                        <div class="dot"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      
+                      <div class="number">
+                        <h2>85<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="shadow"></div>
+                    <div class="content">
+                      <div class="percent" data-text="Pandas" style="--num: 90">
+                        <div class="dot"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      
+                      <div class="number">
+                        <h2>90<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+              
+              
+                  <div class="box">
+                    <div class="shadow"></div>
+                    <div class="content">
+                      <div class="percent" data-text="NLP" style="--num: 85">
+                        <div class="dot"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      
+                      <div class="number">
+                        <h2>85<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="shadow"></div>
+                    <div class="content">
+                      <div class="percent" data-text="Git" style="--num: 85">
+                        <div class="dot"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      
+                      <div class="number">
+                        <h2>85<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="shadow"></div>
+                    <div class="content">
+                      <div class="percent" data-text="MySQL" style="--num: 95">
+                        <div class="dot"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      
+                      <div class="number">
+                        <h2>95<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                 
+
+                  <div class="box">
+                    <div class="shadow"></div>
+                    <div class="content">
+                      <div class="percent" data-text="GCP" style="--num: 85">
+                        <div class="dot"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      
+                      <div class="number">
+                        <h2>85<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="shadow"></div>
+                    <div class="content">
+                      <div class="percent" data-text="Excel" style="--num: 85">
+                        <div class="dot"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      
+                       <div class="number">
+                        <h2>85<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="box">
+                    <div class="shadow"></div>
+
+
+                    <div class="content">
+                      <div class="percent" data-text="CSS" style="--num: 57">
+                        <div class="dot"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      
+                      <div class="number">
+                        <h2>57<span>%</span></h2>
+                      </div> -->
+                   
+                
         </section>
+        <!-- Projects -->
+        <section id="projects" class="projects-section">
+          <h2>My Projects</h2>
+          <div class="projects-grid">
+              <div class="project-card">
+                  <img src="project1.jpg" alt="Project 1">
+                  <div class="project-info">
+                      <h3>Project 1</h3>
+                      <p>Tech Stack: HTML, CSS, JavaScript</p>
+                  </div>
+              </div>
+              <div class="project-card">
+                  <img src="project2.jpg" alt="Project 2">
+                  <div class="project-info">
+                      <h3>Project 2</h3>
+                      <p>Tech Stack: React, Node.js, MongoDB</p>
+                  </div>
+              </div>
+              <div class="project-card">
+                  <img src="project3.jpg" alt="Project 3">
+                  <div class="project-info">
+                      <h3>Project 3</h3>
+                      <p>Tech Stack: Python, Django, PostgreSQL</p>
+                  </div>
+              </div>
+              <!-- Add more project cards as needed -->
+          </div>
+      </section>
+  
        <section id="Timeline">
         <center><h2 class="title_2">Experience</h2></center>
         <ul>
@@ -146,6 +355,26 @@
              
         </ul>
        </section>
+       <!-- <section id="Projects">
+        <ul class="grid">
+            <li class="grid-item">1</li>
+            <li class="grid-item">2</li>
+            <li class="grid-item">3</li>
+            <li class="grid-item">4</li>
+            <li class="grid-item">5</li>
+            <li class="grid-item">6</li>	
+            <li class="grid-item">7</li>
+            <li class="grid-item">8</li>
+            <li class="grid-item">9</li>	
+            <li class="grid-item">10</li>
+            <li class="grid-item">11</li>
+            <li class="grid-item">12</li>	
+            <li class="grid-item">13</li>
+            <li class="grid-item">14</li>
+            <li class="grid-item">15</li>
+              <li class="grid-item">16</li>		
+          </ul>
+       </section> -->
         <section id="contact">
             <h1 class="title_2">Contact Me</h1>
             <div class="contact-container">
