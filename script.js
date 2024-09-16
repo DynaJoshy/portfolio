@@ -5,26 +5,22 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-function sendMail() {
-    var params = {
-        name : document.getElementById("name").value,
-        email : document.getElementById("email").value,
-        message : document.getElementById("message").value
-    }
 
-    emailjs
-    .send("service_20pigze", "template_jm79tde", params)
-    .then((res) => {
-       document.getElementById("name").value = "";
-       document.getElementById("email").value = "";
-       document.getElementById("message").value = "";
-       console.log(res);
-       alert("Message sent successfully!");
-    })
-    .catch((err) => console.log(err));
-}// script.js
 
 function redirectToContact() {
     window.location.href = 'Linkedin.com'; // Replace with the actual path or ID you want to navigate to
   }
-  
+  const textElement = document.getElementById('typewriter');
+const text = "Data Analyst and an AI enthusiast";
+let index = 0;
+
+function typeWriter() {
+    if (index < text.length) {
+        textElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100); // Adjust the typing speed (milliseconds)
+    }
+}
+
+typeWriter();
+
