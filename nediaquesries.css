@@ -53,13 +53,14 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /*phone-size*/
     .header {
         padding: 15px 20px;
         justify-content: space-between;
     }
     .hamburger-icon {
         width: 25px;
+        /* background-color: white; */
     }
     .logo img {
         max-width: 35px;
@@ -73,7 +74,7 @@
         flex-wrap: wrap;
     }
     .menu-links a, .nav-links li a {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     article, .sub-detail_container, .subdetail_container, .info-item p, .contact-info a {
         font-size:0.9rem;
