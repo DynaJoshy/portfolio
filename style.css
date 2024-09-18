@@ -850,6 +850,25 @@ body {
 
             }
         }
+        @media (max-width: 768px) {
+          #video-background {
+              position: absolute;
+              height: auto;
+          }
+      }
+      @media (max-width: 1024px) {
+        #video-background {
+            position: absolute;
+            height: auto;
+        }
+
+      }
+      @media (max-width: 768px) {
+        #video-background {
+            position: absolute;
+            height: auto;
+        }
+      }
 
 /* Typewriter Animation for h1 */
 .title_1 {
