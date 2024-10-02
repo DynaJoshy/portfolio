@@ -1,0 +1,336 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dyna Joshy | Data Analyst and an AI enthusiast</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nediaquesries.css">
+        <link rel="icon" href="./assets/square_logo.png" type="image/x-icon">
+        <script>
+          window.onload = function() {
+              document.getElementById("form").reset();
+          };
+      </script>
+        <script src="script.js"></script>
+    </head>    
+    <body style="background-color:rgb(177, 206, 211);">
+      <video autoplay muted loop id="myVideo">
+        <source src="assets/Video.mp4" type="video/mp4">
+      </video>
+    <header>
+        <nav id="nav"> 
+            <div class="header">
+                <div class="logo">
+                  <a href="https://drive.google.com/file/d/1N8t1yOx_dnJwRKQ_AQ7Dfd2nOdByudTv/view?usp=sharing" class="btn_colors" target="_blank">Download my resume</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a> 
+                    <li><a href="#Skills">Skills</a> 
+                    <li><a href="#projects">Projects</a> 
+                    <li><a href="#Timeline">Experience</a> 
+                    <li><a href="#contact">Contact</a> 
+                    <!--  -->
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="header">
+               
+              <a href="https://drive.google.com/file/d/1N8t1yOx_dnJwRKQ_AQ7Dfd2nOdByudTv/view?usp=sharing"> <button class="btn_colors" > Download my resume</button></a>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a> 
+                        <li><a href="#Skills" onclick="toggleMenu()">Skills</a> 
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a> 
+                        <li><a href="#Timeline" onclick="toggleMenu()">Experience</a> 
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <div class="section_pic_container">
+                <img class="mine" style="border-radius: 30% ; box-shadow: 30% solid black;" src="./assets/Dyna Joshy _Poster.JPG" alt="Dyna Joshy Profile Picture" /></style>
+            </div>
+            <div class="section_text">
+                <div class="container">
+                    <p class="section_text_p1">Hello, I'm</p>
+                    <h1 class="title_1">Dyna Joshy</h1>
+                    <p class="color-change">Let's delve into Data and AI</p>
+
+                </div>
+
+              
+                <div class="btn_container">
+                    <button class="btn_color" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section_text_p1">Get To Know More</p>
+            <h1 class="title_2">About Me</h1>
+            <div class="text_container">
+              Passionate about the possibilities within Big Data and Data Engineering, I thrive on converting complex data sets into practical insights. My diverse tech journey includes leading the Google Developer Student Club, where I fostered a collaborative spirit and encouraged peers to explore advanced technologies. With a blend of technical proficiency and leadership skills, I am committed to leveraging data-driven strategies to address real-world issues and drive innovation. Let's connect and explore how we can collaborate on pioneering projects.</p>
+            </div>
+        </section>
+        <center><h1 class="title_2">Explore my Skillset</h1></center>
+        <section id="Skills">
+            
+            <br>
+            <div class="cont">
+                <div class="bar back basic1" data-skill="MySQL "></div>
+                <div class="bar back basic2" data-skill="Python"></div>
+                <div class="bar back basic3" data-skill="PostgresSQL"></div>
+                <div class="bar back basic4" data-skill="Pandas"></div>
+                <div class="bar back basic5" data-skill="TensorFlow"></div>
+                <div class="bar back basic6" data-skill="GCP"></div>
+                <div class="bar back basic7" data-skill="Numpy"></div>
+                <div class="bar back basic8" data-skill="React"></div>
+              </div>      
+                
+        </section>
+        <!-- Projects -->
+        <section id="projects" class="projects-section">
+          <h1 class="title_2">My Projects</h2>
+            <br>
+            <style>
+                .grid-container {
+                  display: grid;
+                  grid-template-columns: auto auto auto;
+                  background-color: #8fa3a1;
+                  padding: 10px;
+                }
+                
+                .grid-item {
+                  background-color: rgba(125, 191, 192, 0.8);
+                  border: 1px solid rgba(0, 0, 0, 0.8);
+                  padding: 20px;
+                  font-size: 30px;
+                  text-align: center;
+                }
+              
+                /* Media query for tablets and smaller desktops */
+                @media screen and (max-width: 1024px) {
+                  .grid-container {
+                    grid-template-columns: auto auto;
+                  }
+                }
+              
+                /* Media query for phones */
+                @media screen and (max-width: 600px) {
+                  .grid-container {
+                    grid-template-columns: auto;
+                  }
+                }
+              </style>
+              
+            
+            
+            <div class="grid-container">
+                <div class="grid-item">
+                    <!-- Project Title Image -->
+                    <img src="assets/P1.jpeg" alt="Project Title Image" style="width:100px;height:auto;">
+                    
+                    <!-- Project Title and GitHub Icon Link -->
+                    <h3>Pan Card Tampering Detection</h3>
+                    <a href="https://github.com/DynaJoshy/Tampered-Pan-Card-Detection-System" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-github" style="font-size:50px;"></i>
+                    </a>
+                    
+                    <!-- Brief Description -->
+                    <p style =
+                    "font-size : large;">
+                      A system for detecting tampering in pan card images using advanced computer vision techniques. This project leverages image processing and machine learning algorithms to identify and flag altered documents.
+                    </p>
+                    <br>
+                    <!-- Tech Stack -->
+                    <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:medium;color:rgb(180, 65, 65)">OpenCV | Pandas | TensorFlow </style>
+                  </div>
+              
+                  <div class="grid-item">
+                    <!-- Project Title Image -->
+                    <img src="assets/P2.jpeg" alt="Project Title Image" style="width:100px;height:auto;">
+                    
+                    <!-- Project Title and GitHub Icon Link -->
+                    <h3>Network Security and Analysis</h3>
+                    <a href="https://github.com/DynaJoshy/Network-Honeypot-and-Analysis" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-github" style="font-size:50px;"></i>
+                    </a>
+                    
+                    <!-- Brief Description -->
+                    <p style =
+                    "font-size:large;">
+                    A honeypot is a decoy system designed to attract, detect, and analyze unauthorized activities and cyberattacks. By deploying a Raspberry Pi as a honeypot, we create a controlled environment that simulates real network services and vulnerabilities, enticing attackers to interact with it
+                    </p>
+                    
+                    <!-- Tech Stack -->
+                    <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:medium ;color:rgb(180, 65, 65)">RaspberryPi Pico | Pandas | Spark | ELK </style>
+                    </div>
+                  <div class="grid-item">
+                    <!-- Project Title Image -->
+                    <img src="assets/P3.jpg" alt="Project Title Image" style="width:100px;height:auto;">
+                    
+                    <!-- Project Title and GitHub Icon Link -->
+                    <h3>Google App Rating Prediction</h3>
+                    <a href="https://github.com/DynaJoshy/Google-App-Rating-Prediction" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-github" style="font-size:50px;"></i>
+                    </a>
+                    <p style =
+                    "font-size:large;">
+                    This project aims to leverage machine learning techniques, specifically the Random Forest algorithm, to predict the ratings of new Google Play Store applications based on historical data from existing apps to predict the potential success of a new app can significantly influence development and marketing strategies.                    </p>
+                    
+                <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:medium ;color:rgb(180, 65, 65)">Python | Django</style>
+                </div>
+              
+            <div class="grid-item">
+                <!-- Project Title Image -->
+                <img src="assets/P3.jpg" alt="Project Title Image" style="width:100px;height:auto;">
+                
+                <!-- Project Title and GitHub Icon Link -->
+                <h3>Scrap it!</h3>
+                <a href="https://github.com/DynaJoshy/WebScrap" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github" style="font-size:50px;"></i>
+                </a>
+                
+                <!-- Brief Description -->
+                <p style =
+                "font-size:large;">This project is a web scraping tool designed 
+                to extract data from a website using Python and BeautifulSoup library.
+                 It provides a way to scrape and parse web pages to 
+                 gather structured data for various purposes such as research, analysis, or data collection.          
+                 </p>
+                
+                <!-- Tech Stack -->
+                <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:medium;color:rgb(180, 65, 65);">Python | BeautifulSoup</style>
+                </div>
+                <div class="grid-item">
+                  <!-- Project Title Image -->
+                  <img src="assets/P3.jpg" alt="Project Title Image" style="width:100px;height:auto;">
+                  
+                  <!-- Project Title and GitHub Icon Link -->
+                  <h3>Under Development</h3>
+                  <a href="https://github.com/repository-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github" style="font-size:50px;"></i>
+                  </a>
+                  
+                  <!-- Brief Description -->
+                  <p style =
+                  "font-size: large;">
+  SOON TO BE UPDATED!                </p>
+                  
+                  <!-- Tech Stack -->
+                  <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:small">To be updated!</style>
+                  </div>
+                  <div class="grid-item">
+                    <!-- Project Title Image -->
+                    <img src="assets/P3.jpg" alt="Project Title Image" style="width:100px;height:auto;">
+                    
+                    <!-- Project Title and GitHub Icon Link -->
+                    <h3>Under Development</h3>
+                    <a href="https://github.com/epository-link" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-github" style="font-size:50px;"></i>
+                    </a>
+                    
+                    <!-- Brief Description -->
+                    <p style =
+                    "font-size: small;">
+    SOON TO BE UPDATED!                </p>
+                    
+                    <!-- Tech Stack -->
+                    <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:small">To be updated!</style>
+                    </div>
+          
+            
+            
+          
+      </section>
+  
+       <section id="Timeline">
+        <center><h2 class="title_2">Experience</h2></center>
+        <ul>
+            <br>
+            <li style="--accent-color:#FBCA3E">
+              <div class="date">July 2022 to Aug 2022</div>
+              <div class="title">Digital Strategist</div>
+              <div class="descr">Emitime Private Limited</div>
+            <li style="--accent-color:#41516C">
+
+                <div class="date">January 2022</div>
+                <div class="title">Mentor</div>
+                <div class="descr">Mangalam College Of Engineering</div>
+             
+          
+             
+            <li style="--accent-color:#E24A68">
+                <div class="date">May 2023 to June 2023 </div>
+                <div class="title">Technical Coordinator</div>
+                <div class="descr">HandOut Foundation.</div>
+             
+            <li style="--accent-color:#1B5F8C">
+                <div class="date"> Aug 2023 to Nov 2023</div>
+                <div class="title">Coding Instructor</div>
+                <div class="descr">Smavy Academy</div>
+             
+            <li style="--accent-color:#4CADAD">
+                <div class="date">Sep 2024 to Present</div>
+                <div class="title">Research Analyst Intern</div>
+                <div class="descr">WebMobi360 solutions</div>
+             
+        </ul>
+        
+       <section id ="contact">
+          <form  method="POST" id="form">
+
+            <input type="hidden" name="apikey" value="1376d605-dddb-4271-a54c-d36a81099e3d">
+            <input type="hidden" name="subject" value="New Submission from Web3Forms">
+            <input type="checkbox" name="botcheck" id="" style="display: none;">
+        
+            <!-- Custom Form Data -->
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <button type="submit" onclick="sendmail()">Submit</button>
+        
+            <div id="result"></div>
+        
+        </form>
+
+         
+       </section>
+            <!--   -->
+            <footer >
+              <p>&copy; 2024   All rights reserved.</p>
+              <br>
+              <div class="social-icons">
+                  <a href="https://github.com/DynaJoshy" target="_blank" title="GitHub">
+                      <i class="fab fa-github"></i> 
+                  </a>
+                  <a href="https://www.instagram.com/username" target="_blank" title="Instagram">
+                      <i class="fab fa-instagram"></i>
+                  </a> 
+                  <a href="https://www.devpost.com/joshydyna" target="_blank" title="Devpost">
+                      <i class="fa-solid fa-code"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/dyna-joshy" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+              </div>
+          </footer>
+         
+  
+    </main>
+</body>
+</html> 
+
