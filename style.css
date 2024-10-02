@@ -537,18 +537,18 @@ section {
   }
   @media (max-width: 600px) {
     logo.btn_colors {
-      width: 100%;              
-      padding: 15px;           
-      font-size: 18px;          
+      width: 100%;              /* Full width on small screens */
+      padding: 15px;            /* Increased padding for easier touch */
+      font-size: 18px;          /* Larger font size for readability */
     }
   }
   
   /* Responsive design for tablets */
   @media (min-width: 601px) and (max-width: 900px) {
     logo.btn_colors {
-      width: 100%;             
-      padding: 12px;           
-      font-size: 17px;          
+      width: 100%;              /* Full width on tablets */
+      padding: 12px;            /* Adjusted padding */
+      font-size: 17px;          /* Slightly larger font size */
     }
   }
   
@@ -873,11 +873,11 @@ body {
 
 /* Typewriter Animation for h1 */
 .title_1 {
-  overflow: hidden; 
-  border-right: .15em solid rgb(198, 194, 185); 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .10em; 
+  overflow: hidden; /* Ensures the text is not visible outside its container */
+  border-right: .15em solid rgb(198, 194, 185); /* Cursor blink effect */
+  white-space: nowrap; /* Keeps text on a single line */
+  margin: 0 auto; /* Centers the text */
+  letter-spacing: .10em; /* Adjusts spacing between characters */
   animation: typing 2s steps(20, end), blink-caret .75s step-end infinite;
 }
 .icon{
@@ -887,7 +887,11 @@ body {
 }
 
 
+/* ... rest of social media icon styles ... */
 
+/* .copyright {
+    /* Optional: Remove or move to footer */
+    
 
 
 hr {
@@ -923,14 +927,15 @@ footer {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 10px; 
-  flex-wrap: wrap; 
+  gap: 10px; /* Smaller gap for mobile */
+  flex-wrap: wrap; /* Allows wrapping */
 }
 
 .social-icons a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px; 
+  font-size: 20px; /* Adjusted for smaller screens */
+}
 
 .social-icons a:hover {
   color: #007bff;
@@ -975,10 +980,10 @@ footer {
 /* Typewriter Animation for h1 */
 .title_1 {
   overflow: hidden; 
-  border-right: .15em solid rgb(198, 194, 185);
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .10em; 
+  border-right: .15em solid rgb(198, 194, 185); 
+  white-space: nowrap; /* Keeps text on a single line */
+  margin: 0 auto; /* Centers the text */
+  letter-spacing: .10em; /* Adjusts spacing between characters */
   animation: typing 2s steps(20, end), blink-caret .75s step-end infinite;
 }
 
@@ -1071,4 +1076,101 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#5aaed4; }
+/* FOOTER SECTION
+
+
+
+footer p {
+    margin: 0;
+}
+
+footer p::before {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+} */
+/* Skills */
+
+
+
+.cont{
+  width: 50%;
+  margin: 0 auto;
+  border-width: 70%;
+ 
+
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #fefffd;
+  font-weight: bold;
+  border-color: #056060;
+  text-shadow: 1px 1px 1px rgba(73, 142, 185, 0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+
+.bar.back::before{
+  background: linear-gradient(90deg, #3c6191, #2aa657);
+}
+
+
+.bar.basic1::before{
+  width: calc(80% - 10px);
+  
+}
+.bar.basic2::before{
+  width: calc(90% - 10px);
+}
+.bar.basic3::before{
+  width: calc(80% - 10px);
+}
+.bar.basic4::before{
+  width: calc(90% - 10px);
+}
+.bar.basic5::before{
+  width: calc(80% - 10px);
+}
+.bar.basic6::before{
+  width: calc(75% - 10px);
+}
+.bar.basic7::before{
+  width: calc(90% - 10px);
+}
+.bar.basic8::before{
+  width: calc(75% - 10px);
 }
