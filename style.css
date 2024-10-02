@@ -139,7 +139,7 @@ a:hover {
 }
 
 .menu-links {
-    position: absolute;
+    
     top: 100%;
     right: 0%;
     background-color: white;
@@ -147,6 +147,8 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    position: relative; 
+    z-index: 10; /
 }
 
 .menu-links a {
@@ -928,6 +930,7 @@ hr {
   .mine{
     margin-left: 15%;
     margin-top: 50%;
+    z-index: 1;
     }
 }
 @media screen and (max-width: 768px)
