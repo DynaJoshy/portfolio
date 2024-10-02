@@ -759,11 +759,7 @@ body {
     ul li:nth-child(even) {
       grid-column: 3;
     }
-  .mine{
-    border-radius: 20px;
-    box-shadow: #0056b3 40%;
-  }
-    /* start second card */
+  
     ul li:nth-child(2) {
       grid-row: 2/4;
     }
@@ -820,9 +816,26 @@ body {
                 {
                   height: 10px;
                 }
-                .mine {
-                 margin-left: 12em;
+               
+              @keyframes border-animation {
+                  0% {
+                      border-image-slice: 1; /* Starting position */
+                  }
+                  100% {
+                      border-image-slice: 1.5; /* Animated effect */
+                  }
               }
+              
+              
+              @keyframes border-wave {
+                  0% {
+                      transform: scale(1); /* Original size */
+                  }
+                  100% {
+                      transform: scale(1.05); /* Slightly larger for wave effect */
+                  }
+              }
+              
               
                 .textbox
                 {

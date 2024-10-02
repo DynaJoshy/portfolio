@@ -14,7 +14,29 @@
               document.getElementById("form").reset();
           };
       </script>
-        <script src="script.js"></script>
+        <script src="script.js">
+        </script>
+         <style>
+          @keyframes rotate-border {
+            0% {
+                border-color: #9dcfdd;
+            }
+            25% {
+                border-color: #a4c8e1;
+            }
+           
+        }
+        .mine {
+            border-radius: 30%; 
+            border: 10px solid #9db3d0; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+            position: relative; 
+            z-index: 1; 
+            animation: rotate-border 4s linear infinite; 
+        }
+        
+         
+      </style>
     </head>    
     <body style="background-color:rgb(177, 206, 211);">
       <video autoplay muted loop id="myVideo">
@@ -60,7 +82,7 @@
     <main>
         <section id="profile">
             <div class="section_pic_container">
-                <img class="mine" style="border-radius: 30% ; box-shadow: 30% solid black;" src="./assets/Dyna Joshy _Poster.JPG" alt="Dyna Joshy Profile Picture" /></style>
+                <img class="mine" style="border-radius: 30% ; box-shadow: 30%; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);" src="./assets/Dyna Joshy _Poster.JPG" alt="Dyna Joshy Profile Picture" /></style>
             </div>
             <div class="section_text">
                 <div class="container">
