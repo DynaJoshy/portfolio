@@ -930,6 +930,12 @@ hr {
     margin-top: 50%;
     }
 }
+@media screen and (max-width: 768px)
+{
+  .mine{
+    margin-left:15%;
+  }
+}
 footer {
   position: relative;
   text-align: center;
