@@ -1173,14 +1173,14 @@ footer p::before {
 
 
 .bar.basic1::before{
-  width: calc(80% - 10px);
+  width: calc(90% - 10px);
   
 }
 .bar.basic2::before{
-  width: calc(90% - 10px);
+  width: calc(95% - 10px);
 }
 .bar.basic3::before{
-  width: calc(80% - 10px);
+  width: calc(85% - 10px);
 }
 .bar.basic4::before{
   width: calc(90% - 10px);
@@ -1195,5 +1195,17 @@ footer p::before {
   width: calc(90% - 10px);
 }
 .bar.basic8::before{
-  width: calc(75% - 10px);
+  width: calc(80% - 10px);
+}
+
+.percent {
+    position: absolute;
+    right: 10px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bar {
+    position: relative;
 }

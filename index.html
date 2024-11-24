@@ -35,19 +35,21 @@
             z-index: 1; 
             animation: rotate-border 4s linear infinite; 
         }
-        
+          
          
       </style>
     </head>    
-    <body style="background-color:rgb(177, 206, 211);">
-      <video autoplay muted loop id="myVideo">
+   
+<body style="background: radial-gradient(rgb(136, 208, 234), rgb(188, 227, 227));">
+
+      <!-- <video autoplay muted loop id="myVideo">
         <source src="assets/Video.mp4" type="video/mp4">
-      </video>
+      </video> -->
     <header>
         <nav id="nav"> 
             <div class="header">
                 <div class="logo">
-                  <a href="https://drive.google.com/file/d/1mUyhL7twuwD61Isck29Kb4RbHTR8jMPw/view?usp=sharing" class="btn_colors" target="_blank">Download my resume</a>
+                  <a href="https://drive.google.com/file/d/1NPObjVaiz-OXXPI5bGvDvRAVkH9EuajP/view?usp=drive_links" class="btn_colors" target="_blank">Download my resume</a>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#about">About</a> 
@@ -62,7 +64,7 @@
         <nav id="hamburger-nav">
             <div class="header">
                
-              <a href="https://drive.google.com/file/d/1mUyhL7twuwD61Isck29Kb4RbHTR8jMPw/view?usp=sharingk"> <button class="btn_colors" > Download my resume</button></a>
+              <a href="https://drive.google.com/file/d/1NPObjVaiz-OXXPI5bGvDvRAVkH9EuajP/view?usp=drive_link"> <button class="btn_colors" > Download my resume</button></a>
                 <div class="hamburger-menu">
                     <div class="hamburger-icon" onclick="toggleMenu()">
                         <span></span>
@@ -113,15 +115,31 @@
             
             <br>
             <div class="cont">
-                <div class="bar back basic1" data-skill="MySQL "></div>
-                <div class="bar back basic2" data-skill="Python"></div>
-                <div class="bar back basic3" data-skill="PostgresSQL"></div>
-                <div class="bar back basic4" data-skill="Pandas"></div>
-                <div class="bar back basic5" data-skill="TensorFlow"></div>
-                <div class="bar back basic6" data-skill="GCP"></div>
-                <div class="bar back basic7" data-skill="Numpy"></div>
-                <div class="bar back basic8" data-skill="React"></div>
-              </div>      
+                <div class="bar back basic1" data-skill="MySQL">
+                    <span class="percent">85%</span>
+                </div>
+                <div class="bar back basic2" data-skill="Python">
+                    <span class="percent">90%</span>
+                </div>
+                <div class="bar back basic3" data-skill="PostgresSQL">
+                    <span class="percent">80%</span>
+                </div>
+                <div class="bar back basic4" data-skill="Pandas">
+                    <span class="percent">85%</span>
+                </div>
+                <div class="bar back basic5" data-skill="TensorFlow">
+                    <span class="percent">75%</span>
+                </div>
+                <div class="bar back basic6" data-skill="GCP">
+                    <span class="percent">70%</span>
+                </div>
+                <div class="bar back basic7" data-skill="Numpy">
+                    <span class="percent">85%</span>
+                </div>
+                <div class="bar back basic8" data-skill="React">
+                    <span class="percent">75%</span>
+                </div>
+            </div>      
                 
         </section>
         <!-- Projects -->
@@ -137,7 +155,7 @@
                 }
                 
                 .grid-item {
-                  background-color: rgba(125, 191, 192, 0.8);
+                  background-color: rgba(150, 231, 231, 0.8);
                   border: 1px solid rgba(0, 0, 0, 0.8);
                   padding: 20px;
                   font-size: 30px;
