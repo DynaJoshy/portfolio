@@ -57,10 +57,17 @@
     .header {
         padding: 15px 20px;
         justify-content: space-between;
+        transition: all 0.3s ease;
     }
     .hamburger-icon {
+        margin-right: 0px;
+        margin-left: 3em;
         width: 25px;
-        /* background-color: white; */
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    .hamburger-icon.active {
+        transform: rotate(90deg);
     }
     .logo img {
         max-width: 35px;

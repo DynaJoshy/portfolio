@@ -94,6 +94,7 @@
                     <p class="color-change">Let's delve into Data and AI</p>
 
                 </div>
+                </div>
 
               
                 <div class="btn_container">
@@ -150,16 +151,62 @@
                 .grid-container {
                   display: grid;
                   grid-template-columns: auto auto auto;
-                  background-color: #8fa3a1;
-                  padding: 10px;
+                  background: linear-gradient(135deg, rgba(188, 215, 235, 0.8), rgba(147, 190, 221, 0.9));                  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                  padding: 20px;
+                  gap: 20px;
                 }
                 
                 .grid-item {
                   background-color: rgba(150, 231, 231, 0.8);
                   border: 1px solid rgba(0, 0, 0, 0.8);
-                  padding: 20px;
+                  padding: 25px;
                   font-size: 30px;
                   text-align: center;
+                  border-radius: 15px;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                }
+
+                .grid-item:hover {
+                  transform: translateY(-10px);
+                  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+                  background-color: rgba(170, 241, 241, 0.9);
+                }
+
+                .grid-item img {
+                  transition: transform 0.3s ease;
+                  border-radius: 10px;
+                }
+
+                .grid-item:hover img {
+                  transform: scale(1.1);
+                }
+
+                .grid-item h3 {
+                  color: #000000;
+                  margin: 15px 0;
+                  font-weight: bold;
+                }
+
+                .grid-item .fab.fa-github {
+                  transition: color 0.3s ease;
+                }
+
+                .grid-item:hover .fab.fa-github {
+                  color: #333;
+                  transform: rotate(360deg);
+                  transition: transform 0.5s ease;
+                }
+
+                .grid-item p {
+                  line-height: 1.6;
+                }
+
+                .tech-stack {
+                  margin-top: 15px;
+                  padding: 10px;
+                  background: rgba(255,255,255,0.3);
+                  border-radius: 8px;
                 }
               
                 /* Media query for tablets and smaller desktops */
@@ -197,7 +244,10 @@
                     </p>
                     <br>
                     <!-- Tech Stack -->
-                    <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:medium;color:rgb(180, 65, 65)">OpenCV | Pandas | TensorFlow </style>
+                    <div class="tech-stack">
+                      <h6 style="font-family:'Times New Roman'"><b>Tech Stack</b></h6> 
+                      <p style="font-size:medium;color:rgb(180, 65, 65)">OpenCV | Pandas | TensorFlow</p>
+                    </div>
                   </div>
               
                   <div class="grid-item">
@@ -217,8 +267,12 @@
                     </p>
                     
                     <!-- Tech Stack -->
-                    <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:medium ;color:rgb(180, 65, 65)">RaspberryPi Pico | Pandas | Spark | ELK </style>
+                    <div class="tech-stack">
+                      <h6 style="font-family:'Times New Roman'"><b>Tech Stack</b></h6>
+                      <p style="font-size:medium;color:rgb(180, 65, 65)">RaspberryPi Pico | Pandas | Spark | ELK</p>
                     </div>
+                  </div>
+
                   <div class="grid-item">
                     <!-- Project Title Image -->
                     <img src="assets/P3.jpg" alt="Project Title Image" style="width:100px;height:auto;">
@@ -230,51 +284,60 @@
                     </a>
                     <p style =
                     "font-size:large;">
-                    This project aims to leverage machine learning techniques, specifically the Random Forest algorithm, to predict the ratings of new Google Play Store applications based on historical data from existing apps to predict the potential success of a new app can significantly influence development and marketing strategies.                    </p>
+                    This project aims to leverage machine learning techniques, specifically the Random Forest algorithm, to predict the ratings of new Google Play Store applications based on historical data from existing apps to predict the potential success of a new app can significantly influence development and marketing strategies.</p>
                     
-                <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:medium ;color:rgb(180, 65, 65)">Python | Django</style>
+                    <div class="tech-stack">
+                      <h6 style="font-family:'Times New Roman'"><b>Tech Stack</b></h6>
+                      <p style="font-size:medium;color:rgb(180, 65, 65)">Python | Django</p>
+                    </div>
                 </div>
               
-            <div class="grid-item">
-                <!-- Project Title Image -->
-                <img src="assets/P3.jpg" alt="Project Title Image" style="width:100px;height:auto;">
-                
-                <!-- Project Title and GitHub Icon Link -->
-                <h3>Scrap it!</h3>
-                <a href="https://github.com/DynaJoshy/WebScrap" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-github" style="font-size:50px;"></i>
-                </a>
-                
-                <!-- Brief Description -->
-                <p style =
-                "font-size:large;">This project is a web scraping tool designed 
-                to extract data from a website using Python and BeautifulSoup library.
-                 It provides a way to scrape and parse web pages to 
-                 gather structured data for various purposes such as research, analysis, or data collection.          
-                 </p>
-                
-                <!-- Tech Stack -->
-                <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:medium;color:rgb(180, 65, 65);">Python | BeautifulSoup</style>
-                </div>
                 <div class="grid-item">
-                  <!-- Project Title Image -->
-                  <img src="assets/P3.jpg" alt="Project Title Image" style="width:100px;height:auto;">
-                  
-                  <!-- Project Title and GitHub Icon Link -->
-                  <h3>Under Development</h3>
-                  <a href="https://github.com/repository-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github" style="font-size:50px;"></i>
-                  </a>
-                  
-                  <!-- Brief Description -->
-                  <p style =
-                  "font-size: large;">
-  SOON TO BE UPDATED!                </p>
-                  
-                  <!-- Tech Stack -->
-                  <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:small">To be updated!</style>
-                  </div>
-                  <div class="grid-item">
+                    <!-- Project Title Image -->
+                    <img src="assets/P3.jpg" alt="Project Title Image" style="width:100px;height:auto;">
+                    
+                    <!-- Project Title and GitHub Icon Link -->
+                    <h3>Scrap it!</h3>
+                    <a href="https://github.com/DynaJoshy/WebScrap" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-github" style="font-size:50px;"></i>
+                    </a>
+                    
+                    <!-- Brief Description -->
+                    <p style =
+                    "font-size:large;">This project is a web scraping tool designed 
+                    to extract data from a website using Python and BeautifulSoup library.
+                     It provides a way to scrape and parse web pages to 
+                     gather structured data for various purposes such as research, analysis, or data collection.          
+                     </p>
+                    
+                    <!-- Tech Stack -->
+                    <div class="tech-stack">
+                      <h6 style="font-family:'Times New Roman'"><b>Tech Stack</b></h6>
+                      <p style="font-size:medium;color:rgb(180, 65, 65)">Python | BeautifulSoup</p>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <!-- Project Title Image -->
+                    <img src="assets/P3.jpg" alt="Project Title Image" style="width:100px;height:auto;">
+                    
+                    <!-- Project Title and GitHub Icon Link -->
+                    <h3>Under Development</h3>
+                    <a href="https://github.com/repository-link" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-github" style="font-size:50px;"></i>
+                    </a>
+                    
+                    <!-- Brief Description -->
+                    <p style ="font-size: large;">SOON TO BE UPDATED!</p>
+                    
+                    <!-- Tech Stack -->
+                    <div class="tech-stack">
+                      <h6 style="font-family:'Times New Roman'"><b>Tech Stack</b></h6>
+                      <p style="font-size:small">To be updated!</p>
+                    </div>
+                </div>
+
+                <div class="grid-item">
                     <!-- Project Title Image -->
                     <img src="assets/P3.jpg" alt="Project Title Image" style="width:100px;height:auto;">
                     
@@ -285,17 +348,15 @@
                     </a>
                     
                     <!-- Brief Description -->
-                    <p style =
-                    "font-size: small;">
-    SOON TO BE UPDATED!                </p>
+                    <p style ="font-size: small;">SOON TO BE UPDATED!</p>
                     
                     <!-- Tech Stack -->
-                    <h6 style="font-family:'Times New Roman'"></style><b>Tech Stack</b></h6> <p style="font-size:small">To be updated!</style>
+                    <div class="tech-stack">
+                      <h6 style="font-family:'Times New Roman'"><b>Tech Stack</b></h6>
+                      <p style="font-size:small">To be updated!</p>
                     </div>
-          
-            
-            
-          
+                </div>
+            </div>
       </section>
   
        <section id="Timeline">
