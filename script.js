@@ -8,7 +8,6 @@ function toggleMenu() {
 
 
 
-
 function typeWriter() {
     if (index < text.length) {
         textElement.textContent += text.charAt(index);
